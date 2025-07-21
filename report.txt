@@ -1,0 +1,21 @@
+=== Plagiarism Checker Report ===
+Date: 2025-05-11
+Files Analyzed: 3
+
+Cosine Similarity Matrix:
+[[1.         0.09348873 0.27434295]
+ [0.09348873 1.         0.16395271]
+ [0.27434295 0.16395271 1.        ]]
+
+============================================================
+Similarity Report:
+============================================================
+doc3.txt vs doc2.txt -> Cosine: 0.09 | NB: Plagiarized | DT: Plagiarized | Ensemble: Plagiarized | Custom: Not
+doc3.txt vs doc1.txt -> Cosine: 0.27 | NB: Not | DT: Not | Ensemble: Not | Custom: Not
+doc2.txt vs doc1.txt -> Cosine: 0.16 | NB: Plagiarized | DT: Plagiarized | Ensemble: Plagiarized | Custom: Not
+
+Decision Tree Representation:
+|--- Similarity Score <= 0.22
+|   |--- class: 1
+|--- Similarity Score >  0.22
+|   |--- class: 0
